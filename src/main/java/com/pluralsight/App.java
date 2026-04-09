@@ -17,19 +17,29 @@ public class App {
         int age = keyboard.nextInt();
 
 
-        if(size == 1)
+        if (size == 1) {
             grandTotal = regular;
-        else if (size == 2)
+        } else if(size == 2) {
             grandTotal = large;
-        else
-            System.out.println("wrong option, Start Over");
+        } else {
+            System.out.println("Wrong option, Start over");
+        }
 
-        if (age <= 17);
-            grandTotal
+        if(age <= 17) {
+            grandTotal *= .9;
+        }
+        else if(age >= 65) {
+            grandTotal *= .8;
+        }
+
+        System.out.println("your order total: $" + grandTotal);
+        }
+
+
 
 
 
 
 
     }
-}
+

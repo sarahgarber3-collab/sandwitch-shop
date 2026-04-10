@@ -20,7 +20,7 @@ public class App {
         int age = keyboard.nextInt();
 
 
-        if (size == 1) {
+        if(size == 1) {
             grandTotal = regular;
         } else if(size == 2) {
             grandTotal = large;
